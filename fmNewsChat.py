@@ -6,7 +6,7 @@ import appbuilder
 from appbuilder.core.console.appbuilder_client import data_class
 import os
 
-st.title("凤凰FM交互式知识资讯助手")
+st.title("凤凰FM交互式资讯知识助手")
 chat_box = ChatBox()
 chat_box.use_chat_name("新会话1")  # 创建一个新会话（页面加载后）
 
@@ -21,7 +21,7 @@ in_expander = False
 show_history = False
 # 左侧工具栏
 with st.sidebar:
-    st.subheader('凤凰FM交互式知识资讯助手')
+    st.subheader('凤凰FM交互式资讯知识助手')
     chat_name = st.selectbox("会话名称:", ["默认", "会话1"],
                              key="chat_name",
                              on_change=on_chat_change)
