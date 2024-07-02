@@ -59,8 +59,8 @@ feedback_kwargs = {
     "optional_text_label": "wellcome to feedback",
 }
 # 创建一个columns容器，将输入框和按钮放在同一行
-col1, col2 = st.columns([9, 1])
-with col1:
+container = st.container()
+with container:
     if query := st.chat_input('输入您要听的资讯'):
         chat_box.user_say(query)
         chat_box.ai_say([
@@ -88,7 +88,7 @@ with col1:
                     content_type = event.content_type
                     detail = event.detail
                     print(content_type)
-with col2:
+
     if btns.button("清空记录"):
         chat_box.init_session(clear=True)
         st.experimental_rerun()
