@@ -8,17 +8,19 @@ import os
 
 # 自定义CSS样式
 custom_css = """
-    <style>
-        .title h1 {
-            font-size: 12px !important;
-        }
-    </style>
-    """
+<style>
+    .custom-title {
+        font-size: 16px !important;
+        font-family: 'Arial', sans-serif !important;
+        color: #ff5733 !important;
+    }
+</style>
+"""
 
-# 使用st.markdown()插入自定义CSS样式
 st.markdown(custom_css, unsafe_allow_html=True)
 
-st.title("凤凰FM交互式资讯知识助手")
+# 使用st.title()，并通过class参数指定自定义类名
+st.title('凤凰FM交互资讯知识助手', className='custom-title')
 chat_box = ChatBox()
 chat_box.use_chat_name("新会话1")  # 创建一个新会话（页面加载后）
 
