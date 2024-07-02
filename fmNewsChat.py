@@ -10,7 +10,7 @@ import os
 custom_css = """
     <style>
         .title h1 {
-            font-size: 16px !important;
+            font-size: 12px !important;
         }
     </style>
     """
