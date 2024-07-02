@@ -51,7 +51,7 @@ feedback_kwargs = {
 }
 
 
-if query := st.chat_input('input your question here'):
+if query := st.chat_input('输入您要听的资讯'):
     chat_box.user_say(query)
     chat_box.ai_say([
             Markdown("思考中...", in_expander=in_expander,
