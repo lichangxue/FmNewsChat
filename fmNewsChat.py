@@ -6,6 +6,17 @@ import appbuilder
 from appbuilder.core.console.appbuilder_client import data_class
 import os
 
+# 自定义CSS样式
+custom_css = """
+    <style>
+        .subheader {
+            font-size: 24px !important; /* 调整字体大小 */
+        }
+    </style>
+    """
+
+# 使用st.markdown()插入自定义CSS样式
+st.markdown(custom_css, unsafe_allow_html=True)
 # 使用st.title()，并通过class参数指定自定义类名
 st.subheader('凤凰FM交互式资讯知识助手', divider='rainbow')
 chat_box = ChatBox()
