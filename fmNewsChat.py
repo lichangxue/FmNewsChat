@@ -6,7 +6,19 @@ import appbuilder
 from appbuilder.core.console.appbuilder_client import data_class
 import os
 
-st.title("凤凰FM交互式资讯知识助手-听资讯，涨知识")
+# 自定义CSS样式
+custom_css = """
+    <style>
+        .title h1 {
+            font-size: 32px !important;
+        }
+    </style>
+    """
+
+# 使用st.markdown()插入自定义CSS样式
+st.markdown(custom_css, unsafe_allow_html=True)
+
+st.title("凤凰FM交互式资讯知识助手")
 chat_box = ChatBox()
 chat_box.use_chat_name("新会话1")  # 创建一个新会话（页面加载后）
 
