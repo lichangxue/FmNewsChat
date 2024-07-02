@@ -10,7 +10,7 @@ import os
 custom_css = """
     <style>
         .subheader {
-            font-size: 24px !important; /* 调整字体大小 */
+            font-size: 19px !important; /* 调整字体大小 */
         }
     </style>
     """
