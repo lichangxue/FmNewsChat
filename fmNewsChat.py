@@ -7,7 +7,7 @@ from appbuilder.core.console.appbuilder_client import data_class
 import os
 
 # 使用st.title()，并通过class参数指定自定义类名
-st.header('凤凰FM交互式资讯知识助手')
+st.subheader('凤凰FM交互式资讯知识助手', divider='rainbow')
 chat_box = ChatBox()
 chat_box.use_chat_name("新会话1")  # 创建一个新会话（页面加载后）
 
