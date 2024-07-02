@@ -6,7 +6,7 @@ import appbuilder
 from appbuilder.core.console.appbuilder_client import data_class
 import os
 
-
+st.title("凤凰FM交互式资讯助手");
 chat_box = ChatBox()
 chat_box.use_chat_name("新会话1") # 创建一个新会话（页面加载后）
 
