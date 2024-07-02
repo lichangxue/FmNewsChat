@@ -6,21 +6,8 @@ import appbuilder
 from appbuilder.core.console.appbuilder_client import data_class
 import os
 
-# 自定义CSS样式
-custom_css = """
-<style>
-    .title h1 {
-        font-size: 16px !important;
-        font-family: 'Arial', sans-serif !important;
-        color: #ff5733 !important;
-    }
-</style>
-"""
-
-st.markdown(custom_css, unsafe_allow_html=True)
-
 # 使用st.title()，并通过class参数指定自定义类名
-st.title('凤凰FM交互资讯知识助手')
+st.header('凤凰FM交互式资讯知识助手')
 chat_box = ChatBox()
 chat_box.use_chat_name("新会话1")  # 创建一个新会话（页面加载后）
 
@@ -35,7 +22,7 @@ in_expander = False
 show_history = False
 # 左侧工具栏
 with st.sidebar:
-    st.subheader('凤凰FM交互式资讯知识助手-听资讯，涨知识')
+    st.subheader('凤凰FM交互式资讯知识助手')
     chat_name = st.selectbox("会话名称:", ["默认", "会话1"],
                              key="chat_name",
                              on_change=on_chat_change)
